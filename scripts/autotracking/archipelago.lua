@@ -56,7 +56,7 @@ function onClear(slot_data)
             end
         end
     end
-    
+
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
 
@@ -97,11 +97,15 @@ function onClear(slot_data)
     if slot_data["required_jewels"] then
         Tracker:FindObjectForCode("op_reqjewel").AcquiredCount = tonumber(slot_data["required_jewels"])
         if slot_data["required_jewels"] == 0 then
-            Tracker:FindObjectForCode("op_reqgjewel").AcquiredCount = tonumber(slot_data["required_jewels"])
+            Tracker:FindObjectForCode("op_reqgjewel").AcquiredCount = 0
         else
             Tracker:FindObjectForCode("op_reqgjewel").AcquiredCount = 1
         end
     end
+    if slot_data["required_bosses"] then
+        Tracker:FindObjectForCode("op_reqbosses").AcquiredCount = tonumber(slot_data["required_bosses"])
+    end
+    Tracker:FindObjectForCode("op_gpspoiled").Active = slot_data["include_spoiled_rotten"] or false
 end
 
 -- called when an item gets collected

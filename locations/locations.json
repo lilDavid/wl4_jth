@@ -84,6 +84,24 @@
 				]
 			},
 			{
+				"name": "Spoiled Rotten",
+				"access_rules": [ "$spoiledne,$spoiledse,$spoiledsw,$spoilednw,$keyzerhoh" ],
+				"visibility_rules": [ "op_gpspoiled" ],
+				"sections": [
+					{
+						"name": "Defeat Spoiled Rotten",
+						"hosted_item": "eventspoiled"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "map",
+						"x": 668,
+						"y": 282
+					}
+				]
+			},
+			{
 				"name": "Palm Tree Paradise",
 				"sections": [
 					{
@@ -2141,7 +2159,7 @@
 			},
 			{
 				"name": "Golden Passage",
-				"access_rules": [ "eventcractus,eventcondor,eventaerodent,eventcatbat" ],
+				"access_rules": [ "$gpaccess" ],
 				"sections": [
 					{
 						"name": "Current Puzzle Box",
@@ -2264,7 +2282,7 @@
 			},
 	    	{
 				"name": "Golden Diva",
-				"access_rules": [ "$divane,$divase,$divasw,$divanw,heavygrab,eventcractus,eventcondor,eventaerodent,eventcatbat,$keyzergp" ],
+				"access_rules": [ "$divane,$divase,$divasw,$divanw,heavygrab,$gpaccess,$keyzergp" ],
 				"sections": [
 					{
 						"name": "Defeat Golden Diva",

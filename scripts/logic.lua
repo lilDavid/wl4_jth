@@ -189,6 +189,17 @@ function divanw()
   return jewelCount + 1 - jewelReq
 end
 
+function keyzerhoh()
+  if has("keyzerptp") then
+    return 1
+  else
+    if has("op_doors_2") then
+      return 0
+    else
+      return 1
+    end
+  end
+end
 function keyzerptp()
   if has("keyzerptp") then
     return 1
@@ -379,4 +390,10 @@ end
 
 function keyzeroff()
   return not has("op_keyzershuffle_on")
+end
+
+function gpaccess()
+  local required = Tracker:ProviderCountForCode("op_reqbosses")
+  if has("op_gpspoiled") then return Tracker:ProviderCountForCode("eventboss") >= required end
+  return Tracker:ProviderCountForCode("eventmainboss") >= math.min(required, 4)
 end

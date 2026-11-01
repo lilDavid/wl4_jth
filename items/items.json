@@ -384,6 +384,21 @@
 		"img": "images/requiredgoldenjewel.png"
 	},
 	{
+		"name": "Required Bosses",
+		"type": "consumable",
+		"max_quantity": 5,
+		"initial_quantity": 4,
+		"codes": "op_reqbosses",
+		"allow_disabled": false,
+		"img": "images/pyramid.png"
+	},
+	{
+		"name": "Include Spoiled Rotten",
+		"type": "toggle",
+		"codes": "op_gpspoiled",
+		"img": "images/boss_spoiled.png"
+	},
+	{
 		"name": "Open Portals",
 		"type": "progressive",
 		"codes": "op_openportal",
@@ -476,28 +491,34 @@
 		]
 	},
 	{
+		"name": "Defeat Spoiled Rotten (Event)",
+		"type": "toggle",
+		"img": "images/boss_spoiled.png",
+		"codes": "eventspoiled, eventboss"
+	},
+	{
 		"name": "Defeat Cractus (Event)",
 		"type": "toggle",
 		"img": "images/boss_cractus.png",
-		"codes": "eventcractus"
+		"codes": "eventcractus, eventmainboss, eventboss"
 	},
 	{
 		"name": "Defeat Cuckoo Condor (Event)",
 		"type": "toggle",
 		"img": "images/boss_condor.png",
-		"codes": "eventcondor"
+		"codes": "eventcondor, eventmainboss, eventboss"
 	},
 	{
 		"name": "Defeat Aerodent (Event)",
 		"type": "toggle",
 		"img": "images/boss_aerodent.png",
-		"codes": "eventaerodent"
+		"codes": "eventaerodent, eventmainboss, eventboss"
 	},
 	{
 		"name": "Defeat Catbat (Event)",
 		"type": "toggle",
 		"img": "images/boss_catbat.png",
-		"codes": "eventcatbat"
+		"codes": "eventcatbat, eventmainboss, eventboss"
 	},
 	{
 		"name": "Defeat Golden Diva (Event)",

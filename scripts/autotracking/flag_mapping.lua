@@ -12,17 +12,17 @@ EVENT_FLAG_MAPPING =
             }
         }
     },
---    {
---        bit = 1,
---        status = 0,
---        codes =
---        {
---            {
---                code = "Defeat Spoiled Rotten",
---                setting = nil
---            }
---        }
---    },
+   {
+       bit = 1,
+       status = 0,
+       codes =
+       {
+           {
+               code = "eventspoiled",
+               setting = nil
+           }
+       }
+   },
     {
         bit = 2,
         status = 0,
