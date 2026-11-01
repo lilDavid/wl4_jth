@@ -1634,7 +1634,7 @@
 					},
 					{
 						"name": "Agile Bat Hidden Box",
-						"access_rules": [ "groundpound,grab,headsmash" ],
+						"access_rules": [ "groundpound,grab,headsmash", "[op_logic_adv],grab,headsmash" ],
 						"visibility_rules": [ "hard","shard" ],
 						"item_count": 1
 					},
@@ -1681,7 +1681,7 @@
 					},
 					{
 						"name": "Agile Bat Hidden Diamond",
-						"access_rules": [ "groundpound,grab,headsmash" ],
+						"access_rules": [ "groundpound,grab,headsmash", "[op_logic_adv],grab,headsmash" ],
 						"visibility_rules": [ "op_diamond_1,normal" ],
 						"item_count": 1,
 						"chest_unopened_img": "images/diamond.png",
